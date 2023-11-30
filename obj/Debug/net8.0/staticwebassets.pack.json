@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\nolo7\\OneDrive\\Documents\\School\\Winter2023\\dot NET\\StudioBlazorApp\\newBlazorAppPizza\\PizzaProjectRazor\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BetterPizza.bundle.scp.css",
+      "PackagePath": "staticwebassets\\BetterPizza.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\nolo7\\OneDrive\\Documents\\School\\Winter2023\\dot NET\\StudioBlazorApp\\newBlazorAppPizza\\PizzaProjectRazor\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\nolo7\\OneDrive\\Documents\\School\\Winter2023\\dot NET\\StudioBlazorApp\\newBlazorAppPizza\\PizzaProjectRazor\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\nolo7\\OneDrive\\Documents\\School\\Winter2023\\dot NET\\StudioBlazorApp\\newBlazorAppPizza\\PizzaProjectRazor\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\nolo7\\OneDrive\\Documents\\School\\Winter2023\\dot NET\\StudioBlazorApp\\newBlazorAppPizza\\PizzaProjectRazor\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BetterPizza.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.BetterPizza.props",
+      "PackagePath": "build\\BetterPizza.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BetterPizza.props",
+      "PackagePath": "buildMultiTargeting\\BetterPizza.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.BetterPizza.props",
+      "PackagePath": "buildTransitive\\BetterPizza.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

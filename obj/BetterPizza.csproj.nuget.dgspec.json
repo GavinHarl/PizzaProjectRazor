@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nolo7\\OneDrive\\Documents\\School\\Winter2023\\dot NET\\StudioBlazorApp\\BetterPizza\\BetterPizza.csproj": {}
+    "C:\\Users\\nolo7\\OneDrive\\Documents\\School\\Winter2023\\dot NET\\StudioBlazorApp\\newBlazorAppPizza\\PizzaProjectRazor\\BetterPizza.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nolo7\\OneDrive\\Documents\\School\\Winter2023\\dot NET\\StudioBlazorApp\\BetterPizza\\BetterPizza.csproj": {
+    "C:\\Users\\nolo7\\OneDrive\\Documents\\School\\Winter2023\\dot NET\\StudioBlazorApp\\newBlazorAppPizza\\PizzaProjectRazor\\BetterPizza.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nolo7\\OneDrive\\Documents\\School\\Winter2023\\dot NET\\StudioBlazorApp\\BetterPizza\\BetterPizza.csproj",
+        "projectUniqueName": "C:\\Users\\nolo7\\OneDrive\\Documents\\School\\Winter2023\\dot NET\\StudioBlazorApp\\newBlazorAppPizza\\PizzaProjectRazor\\BetterPizza.csproj",
         "projectName": "BetterPizza",
-        "projectPath": "C:\\Users\\nolo7\\OneDrive\\Documents\\School\\Winter2023\\dot NET\\StudioBlazorApp\\BetterPizza\\BetterPizza.csproj",
+        "projectPath": "C:\\Users\\nolo7\\OneDrive\\Documents\\School\\Winter2023\\dot NET\\StudioBlazorApp\\newBlazorAppPizza\\PizzaProjectRazor\\BetterPizza.csproj",
         "packagesPath": "C:\\Users\\nolo7\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nolo7\\OneDrive\\Documents\\School\\Winter2023\\dot NET\\StudioBlazorApp\\BetterPizza\\obj\\",
+        "outputPath": "C:\\Users\\nolo7\\OneDrive\\Documents\\School\\Winter2023\\dot NET\\StudioBlazorApp\\newBlazorAppPizza\\PizzaProjectRazor\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
