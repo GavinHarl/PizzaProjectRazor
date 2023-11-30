@@ -1,45 +1,53 @@
-﻿namespace BetterPizza
+﻿using System.Security.Cryptography.X509Certificates;
+
+namespace BlazorTest
 {
 	public class Pizza
 	{
-		public Topping PizzaTopping { get; set; }
+		public Topping PizzaTopping{ get; set; }
 
-		public Pizza()
+		public Pizza() 
 		{
 			PizzaTopping = new Topping();
 		}
 
-		public decimal GetFinalPrice()
+		public double getFinalPrice()
 		{
 			return PizzaTopping.ToppingPrice();
 		}
 	}
+	
 
 	public class Topping
 	{
-		public bool Bacon { get; set; }
+		public bool Pepperoni { get; set; }
+		public bool ExtraCheese {get; set;}
 
-		public bool MoreBacon { get; set; }
+		public bool Ham { get; set;}
 
-		public bool ExtraBacon { get; set; }
+		public bool Chicken { get; set; }
 
-		public decimal ToppingPrice()
+		public double ToppingPrice()
 		{
-			decimal runningTotal = 0;
-			if (Bacon)
+			double runningTotal = 0;
+
+			if (Pepperoni)
 			{
-				runningTotal += 30;
+				runningTotal += 1.50;
 			}
-			if (MoreBacon)
+			if (ExtraCheese)
 			{
-				runningTotal += 50;
+				runningTotal += 2.00;
 			}
-			if (ExtraBacon)
+			if (Ham)
 			{
-				runningTotal += 200;
+				runningTotal += 1.79;
+			}
+			if (Chicken)
+			{
+				runningTotal += 3.00;
 			}
 			return runningTotal;
-
 		}
 
 	}

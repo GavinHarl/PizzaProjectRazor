@@ -1,45 +1,51 @@
 ﻿@page "/pizzadel"
 @rendermode InteractiveServer
 
+
 <h3>PizzaDelivery</h3>
 
 <label>
-	<input type="checkbox" @bind='pizza.PizzaTopping.Bacon'/>
-	Bacon
+	<input type="checkbox" @bind='pizza.PizzaTopping.Pepperoni'>
+	Pepperoni
 </label>
-<br />
 
 <label>
-	<input type="checkbox" @bind='pizza.PizzaTopping.MoreBacon' />
-	More Bacon
+	<input type="checkbox" @bind='pizza.PizzaTopping.ExtraCheese'>
+	ExtraCheese
 </label>
-<br />
 
 <label>
-	<input type="checkbox" @bind='pizza.PizzaTopping.ExtraBacon' />
-	Extra Bacon
+	<input type="checkbox" @bind='pizza.PizzaTopping.Ham'>
+	Ham
 </label>
-<br />
+
+<label>
+	<input type="checkbox" @bind='pizza.PizzaTopping.Chicken'>
+	Chicken
+</label>
 
 <p>Topping Selection Checker</p>
 <ul>
-	@if (pizza.PizzaTopping.Bacon)
+	@if (pizza.PizzaTopping.Pepperoni)
 	{
-		<li>Bacon</li>
+		<li>Pepperoni</li>
 	}
-	@if (pizza.PizzaTopping.MoreBacon)
+	@if (pizza.PizzaTopping.ExtraCheese)
 	{
-		<li>More Bacon</li>
+		<li>ExtraCheese</li>
 	}
-	@if (pizza.PizzaTopping.ExtraBacon)
+	@if (pizza.PizzaTopping.Ham)
 	{
-		<li>Extra Bacon</li>
+		<li>Ham</li>
+	}
+	@if (pizza.PizzaTopping.Chicken)
+	{
+		<li>Chicken</li>
 	}
 </ul>
 
-<p>Total Price: $@pizza.GetFinalPrice()</p>
+<p>Total Price: @pizza.getFinalPrice()</p>
 
 @code {
 	Pizza pizza = new Pizza();
-
 }
