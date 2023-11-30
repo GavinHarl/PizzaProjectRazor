@@ -1,0 +1,44 @@
+﻿@page "/crust"
+@rendermode InteractiveServer
+
+<h3>Pizza Crust</h3>
+
+<label>
+	<input type="checkbox" @bind='crust.PizzaCrusts.ThinCrust' />
+	Thin Crust
+</label>
+<br />
+
+<label>
+	<input type="checkbox" @bind='crust.PizzaCrusts.PanCrust' />
+	Pan Crust
+</label>
+<br />
+
+<label>
+	<input type="checkbox" @bind='crust.PizzaCrusts.HandTossed' />
+	Hand Tossed
+</label>
+<br />
+
+<p>Crust Selection Checker</p>
+<ul>
+	@if (crust.PizzaCrusts.ThinCrust)
+	{
+		<li>Thin Crust</li>
+	}
+	@if (crust.PizzaCrusts.PanCrust)
+	{
+		<li>Pan Crust</li>
+	}
+	@if (crust.PizzaCrusts.HandTossed)
+	{
+		<li>Hand Tossed</li>
+	}
+</ul>
+
+<p>Total Price: $@crust.GetFinalPrice()</p>
+
+@code {
+	PizzaCrust crust = new PizzaCrust();
+}
