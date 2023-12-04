@@ -2,50 +2,69 @@
 @rendermode InteractiveServer
 
 
-<h3>PizzaDelivery</h3>
+<h3>Pizza Delivery</h3>
+
+<Crust pizza="pizza"></Crust>
+<Topping pizza="pizza"></Topping>
+
+<h3>Tip</h3>
 
 <label>
-	<input type="checkbox" @bind='pizza.PizzaTopping.Pepperoni'>
-	Pepperoni
+	<input type="checkbox" @bind='pizza.PizzaTips.Twelve' />
+	Twelve
 </label>
+<br />
 
 <label>
-	<input type="checkbox" @bind='pizza.PizzaTopping.ExtraCheese'>
-	ExtraCheese
+	<input type="checkbox" @bind='pizza.PizzaTips.Fifteen' />
+	Fifteen
 </label>
+<br />
 
 <label>
-	<input type="checkbox" @bind='pizza.PizzaTopping.Ham'>
-	Ham
+	<input type="checkbox" @bind='pizza.PizzaTips.Eighteen' />
+	Eighteen
 </label>
+<br />
 
-<label>
-	<input type="checkbox" @bind='pizza.PizzaTopping.Chicken'>
-	Chicken
-</label>
-
-<p>Topping Selection Checker</p>
+<p>Tip Selection Checker</p>
 <ul>
-	@if (pizza.PizzaTopping.Pepperoni)
+	@if (pizza.PizzaTips.Twelve)
 	{
-		<li>Pepperoni</li>
+		<li>12</li>
 	}
-	@if (pizza.PizzaTopping.ExtraCheese)
+	@if (pizza.PizzaTips.Fifteen)
 	{
-		<li>ExtraCheese</li>
+		<li>15</li>
 	}
-	@if (pizza.PizzaTopping.Ham)
+	@if (pizza.PizzaTips.Eighteen)
 	{
-		<li>Ham</li>
-	}
-	@if (pizza.PizzaTopping.Chicken)
-	{
-		<li>Chicken</li>
+		<li>18</li>
 	}
 </ul>
 
-<p>Total Price: @pizza.getFinalPrice()</p>
+<button class="btn btn-primary" @onclick="calcAmt">Pizza Cost</button>
+
+<p>Crust Cost: @crustCost.ToString("C")</p>
+<p>Topping Cost: @toppingCost.ToString("C")</p>
+<p>Delivery Cost: $2</p>
+<p>Tip Cost: @tipCost.ToString("C")</p>
+<p>Total Cost: @totCost.ToString("C")</p>
+
 
 @code {
+	double crustCost;
+	double toppingCost;
+	double tipCost;
+	double totCost;
+
+	private void calcAmt()
+	{
+		crustCost = pizza.GetCrustPrice();
+		toppingCost = pizza.GetToppingPrice();
+		tipCost = pizza.GetTipAmount();
+		totCost = pizza.GetTotal();
+	}
+
 	Pizza pizza = new Pizza();
 }

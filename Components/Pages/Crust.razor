@@ -4,41 +4,47 @@
 <h3>Pizza Crust</h3>
 
 <label>
-	<input type="checkbox" @bind='crust.PizzaCrusts.ThinCrust' />
+	<input type="checkbox" @bind='pizza.PizzaCrusts.ThinCrust' />
 	Thin Crust
 </label>
 <br />
 
 <label>
-	<input type="checkbox" @bind='crust.PizzaCrusts.PanCrust' />
+	<input type="checkbox" @bind='pizza.PizzaCrusts.PanCrust' />
 	Pan Crust
 </label>
 <br />
 
 <label>
-	<input type="checkbox" @bind='crust.PizzaCrusts.HandTossed' />
+	<input type="checkbox" @bind='pizza.PizzaCrusts.HandTossed' />
 	Hand Tossed
 </label>
 <br />
 
 <p>Crust Selection Checker</p>
 <ul>
-	@if (crust.PizzaCrusts.ThinCrust)
+	@if (pizza.PizzaCrusts.ThinCrust)
 	{
 		<li>Thin Crust</li>
 	}
-	@if (crust.PizzaCrusts.PanCrust)
+	@if (pizza.PizzaCrusts.PanCrust)
 	{
 		<li>Pan Crust</li>
 	}
-	@if (crust.PizzaCrusts.HandTossed)
+	@if (pizza.PizzaCrusts.HandTossed)
 	{
 		<li>Hand Tossed</li>
 	}
 </ul>
 
-<p>Total Price: $@crust.GetFinalPrice()</p>
+<p>Total Price: @pizza.GetCrustPrice().ToString("C")</p>
 
 @code {
-	PizzaCrust crust = new PizzaCrust();
+
+	[Parameter]
+	public Pizza pizza { get; set; }
+
+
+
+
 }
